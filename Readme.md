@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Sonya Karpovich](https://up.htmlacademy.ru/htmlcss/24/user/838895).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
