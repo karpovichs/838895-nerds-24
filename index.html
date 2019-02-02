@@ -14,7 +14,7 @@
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts">Контакты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
           <li><a href="#">Корзина</a></li>
@@ -35,7 +35,17 @@
         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
         <a class="button" href="#">Узнать больше</a>
       </div>
-      <!--Кнопки слайдера-->
+      <ul class="slider">
+        <li>
+          <button class="slider-button current-slider-button" type="button">Слайд 1</button>
+        </li>
+        <li>
+          <button class="slider-button" type="button">Слайд 2</button>
+        </li>
+        <li>
+          <button class="slider-button" type="button">Слайд 3</button>
+        </li>
+      </ul>
     </header>
 
     <main class="container">
@@ -60,7 +70,6 @@
           </li>
         </ul>
       </section>
-
       <section class="about-us">
         <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -71,7 +80,6 @@
           <li class="order-type">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </section>
-
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <img src="img/nerds-illustration.png" alt="Красивый логотип студии «Нёрдс»" width="360" height="208">
@@ -89,7 +97,6 @@
           </tr>
         </table>
       </section>
-
       <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="partners-list">
@@ -118,25 +125,25 @@
     </main>
 
     <footer class="main-footer">
-      <img class="map-pic" src="img/map.png" alt="Карта с отметкой студии" width="1440" height="416">
-      <img class="map-marker" src="img/map-marker.png" alt="Отметка на карте">
+      <img class="map-pic" src="img/map.png" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+      <img class="map-marker" src="img/map-marker.png" alt="Отметка адреса на карте">
       <div class="contact-us">
         <b>Nёrds design studio</b>
         <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <button class="button">Напишите нам</button>
+        <button class="button write-us-button" type="button">Напишите нам</button>
       </div>
       <div class="footer-social">
         <ul>
           <li class="social-button social-button-vk">
-            <a href="#">Вконтакте</a>
+            <a href="#">Нёрдс во Вконтакте</a>
           </li>
           <li class="social-button social-button-fb">
-            <a href="#">Фейсбук</a>
+            <a href="#">Нёрдс в Фейсбук</a>
           </li>
           <li class="social-button social-button-inst">
-            <a href="#">Инстаграм</a>
+            <a href="#">Нёрдс в Инстаграм</a>
           </li>
         </ul>
       </div>
@@ -145,10 +152,27 @@
         <p> Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
+
     <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
-      <!--Форма-->
-      <span class="modal-close">Закрыть</span>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-info">
+          <label>Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия" required>
+          </label>
+        </p>
+        <p class="write-us-info">
+          <label>Ваш e-mail:
+            <input type="email" name="email" placeholder="email@example.com" required>
+          </label>
+        </p>
+        <p class="write-us-info">
+          <label for="text-field">Текст письма:</label>
+          <textarea name="text" id="text-field" placeholder="В свободной форме" required></textarea>
+        </p>
+        <button class="button button-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
   </body>
