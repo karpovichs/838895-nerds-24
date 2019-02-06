@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,13 +13,13 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" alt="Логотип студии «Нёрдс»" width="160" height="65">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation no-marker">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
+        <ul class="user-navigation no-marker">
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
@@ -27,36 +30,36 @@
       <section>
         <h2 class="visually-hidden">Фильтры</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend>Стоимость:</legend>
             <!--Ползунки со стоимостью-->
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend>Сетка:</legend>
-            <ul>
+            <ul class="no-marker">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="fixed" id="filter-fixed" checked>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="fluid" id="filter-fluid" checked>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout" value="fluid" id="filter-fluid">
                 <label for="filter-fluid">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="no-marker">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage" disabled>
                 <label for="filter-advantage">Блок преимуществ</label>
               </li>
               <li class="filter-option">
@@ -76,15 +79,34 @@
           <button class="button show-button" type="submit">Показать</button>
         </form>
       </section>
-      <section>
+      <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
-        <!--Сортировка-->
+        <b>Сортировать</b>
+        <ul class="no-marker">
+          <li><a class="button-sort current-sort" href="#">По цене</a></li>
+          <li><a class="button-sort" href="#">По типу</a></li>
+          <li><a class="button-sort" href="#">По названию</a></li>
+        </ul>
+        <ul class="no-marker">
+          <li>
+            <a class="button-sort current-sort" href="#" aria-label="По убыванию">
+              <img src="img/icon-down-dir.svg" alt="Сортировка по убыванию">
+            </a>
+          </li>
+          <li>
+            <a class="button-sort" href="#" aria-label="По возрастанию">
+              <img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию">
+            </a>
+          </li>
+        </ul>
       </section>
       <section>
         <h2 class="visually-hidden">Шаблоны</h2>
-        <ul class="templates-list">
+        <ul class="templates-list no-marker">
           <li class="template-item">
-            <img class="item-pic" src="img/img-sedona.jpg" alt="Шаблон Sedona - Информационный сайт для туристов" width="360" height="576">
+            <div class="item-pic">
+              <img src="img/img-sedona.jpg" alt="Шаблон Sedona - Информационный сайт для туристов" width="360" height="576">
+            </div>
             <div class="template-info">
               <h3><a href="sedona.html">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
@@ -92,7 +114,9 @@
             </div>
           </li>
           <li class="template-item">
-            <img class="item-pic" src="img/img-pink.jpg" alt="Шаблон Pink - Продуктовый лендинг приложения для iOS и Android" width="360" height="576">
+            <div class="item-pic">
+              <img src="img/img-pink.jpg" alt="Шаблон Pink - Продуктовый лендинг приложения для iOS и Android" width="360" height="576">
+            </div>
             <div class="template-info">
               <h3><a href="pink.html">Pink</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -100,7 +124,9 @@
             </div>
           </li>
           <li class="template-item">
-            <img class="item-pic" src="img/img-barbershop.jpg" alt="Шаблон Barbershop - Сайт салона красоты" width="360" height="576">
+            <div class="item-pic">
+              <img src="img/img-barbershop.jpg" alt="Шаблон Barbershop - Сайт салона красоты" width="360" height="576">
+            </div>
             <div class="template-info">
               <h3><a href="barbershop.html">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -108,7 +134,9 @@
             </div>
           </li>
           <li class="template-item">
-            <img class="item-pic" src="img/img-mishka.jpg" alt="Шаблон Mishka - Интернет-магазин вязаных игрушек" width="360" height="576">
+            <div class="item-pic">
+              <img src="img/img-mishka.jpg" alt="Шаблон Mishka - Интернет-магазин вязаных игрушек" width="360" height="576">
+            </div>
             <div class="template-info">
               <h3><a href="mishka.html">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
@@ -116,7 +144,9 @@
             </div>
           </li>
           <li class="template-item">
-            <img class="item-pic" src="img/img-aplus.jpg" alt="Шаблон A-plus - Лендинг курсов повышения квалификации" width="360" height="576">
+            <div class="item-pic">
+              <img src="img/img-aplus.jpg" alt="Шаблон A-plus - Лендинг курсов повышения квалификации" width="360" height="576">
+            </div>
             <div class="template-info">
               <h3><a href="a-plus.html">A-plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
@@ -124,7 +154,9 @@
             </div>
           </li>
           <li class="template-item">
-            <img class="item-pic" src="img/img-kvast.jpg" alt="Шаблон Кваст" width="360" height="576">
+            <div class="item-pic">
+              <img src="img/img-kvast.jpg" alt="Шаблон Кваст" width="360" height="576">
+            </div>
             <div class="template-info">
               <h3><a href="kvast.html">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -132,18 +164,18 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list no-marker">
           <li class="pagination-item pagination-item-current">
-            <a href="#">1</a>
+            <a class="button pagination-button" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a class="button pagination-button" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a class="button pagination-button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#">Следующая</a>
+            <a class="button pagination-button" href="#">Следующая</a>
           </li>
         </ul>
       </section>
@@ -160,15 +192,24 @@
         <a class="button write-us-button" href="write-us.html">Напишите нам</a>
       </div>
       <div class="footer-social">
-        <ul>
-          <li class="social-button social-button-vk">
-            <a href="#">Нёрдс во Вконтакте</a>
+        <ul class="no-marker">
+          <li>
+            <a class="button social-button social-button-vk" href="#">
+              Нёрдс во Вконтакте
+              <img src="img/vk-icon.svg" alt="Иконка Вконтакте">
+            </a>
           </li>
-          <li class="social-button social-button-fb">
-            <a href="#">Нёрдс в Фейсбук</a>
+          <li>
+            <a class="button social-button social-button-fb" href="#">
+              Нёрдс в Фейсбук
+              <img src="img/fb-icon.svg" alt="Иконка Фейсбук">
+            </a>
           </li>
-          <li class="social-button social-button-inst">
-            <a href="#">Нёрдс в Инстаграм</a>
+          <li>
+            <a class="button social-button social-button-inst" href="#">
+              Нёрдс в Инстаграм
+              <img src="img/insta-icon.svg" alt="Иконка Инстаграм">
+            </a>
           </li>
         </ul>
       </div>
