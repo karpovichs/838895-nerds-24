@@ -76,7 +76,7 @@ button {
   opacity: 0.3;
 }
 
-.site-navigation-current a {
+.site-navigation-current {
   border-bottom: 2px solid #fb565a;
 }
 
@@ -311,16 +311,20 @@ button {
 }
 
 .filter-input-checkbox:hover + label::before,
-.filter-input-radio:hover + label::before {
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
   opacity: 1;
 }
 
 .filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg")
 }
 
 .filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before,
 .filter-input-radio:checked + label::before {
   background-image: url("../img/radio-on.svg")
 }
@@ -436,7 +440,11 @@ button {
   border-radius: 40px;
 }
 
-.social-button:active img {
+.social-button svg {
+  margin: auto;
+}
+
+.social-button:active svg {
   opacity: 0.3;
 }
 
