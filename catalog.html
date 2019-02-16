@@ -23,18 +23,31 @@
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
-      <h1 class="general-title">Магазин готовых шаблонов</h1>
+
     </header>
 
-    <main class="container">
+    <main>
+      <h1 class="general-title">Магазин готовых шаблонов</h1>
 
-      <div class="column-wrapper">
+      <div class="column-wrapper container">
         <section class="left-column">
           <h2 class="visually-hidden">Фильтры</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter-fieldset">
               <legend>Стоимость:</legend>
-              <!--Ползунки со стоимостью-->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend>Сетка:</legend>
@@ -85,7 +98,7 @@
         <div class="right-column">
           <section class="sort">
             <h2 class="visually-hidden">Сортировка</h2>
-            <b>Сортировать</b>
+            <b>Сортировать:</b>
             <ul class="no-marker">
               <li><a class="button-sort current-sort" href="#">По цене</a></li>
               <li><a class="button-sort" href="#">По типу</a></li>
@@ -174,16 +187,16 @@
             </ul>
             <ul class="pagination-list no-marker">
               <li class="pagination-item pagination-item-current">
-                <a class="button pagination-button" href="#">1</a>
+                <a href="">1</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-button" href="#">2</a>
+                <a  href="#">2</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-button" href="#">3</a>
+                <a href="#">3</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-button" href="#">Следующая</a>
+                <a href="#">Следующая</a>
               </li>
             </ul>
           </section>
@@ -265,7 +278,11 @@
         </p>
         <button class="button button-send" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button" aria-label="Закрыть">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+      </button>
     </section>
   </body>
 </html>
