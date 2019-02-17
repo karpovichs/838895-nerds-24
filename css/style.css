@@ -74,6 +74,7 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   border-radius: 2px;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -779,14 +780,10 @@ td.number-description {
   opacity: 1;
 }
 
-.filter-input-checkbox:hover + label::before,
-.filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg")
 }
 
-.filter-input-radio:hover + label::before,
-.filter-input-radio:focus + label::before,
 .filter-input-radio:checked + label::before {
   background-image: url("../img/radio-on.svg")
 }
@@ -1168,6 +1165,8 @@ td.number-description {
   padding: 7px 14px;
   width: 760px;
   min-height: 118px;
+
+  resize: none;
 }
 
 .write-us-info input[type="text"],
@@ -1202,7 +1201,7 @@ td.number-description {
 
 .button-send {
   margin: 0;
-  margin-top: 12px;
+  margin-top: 5px;
   width: 260px;
 }
 
