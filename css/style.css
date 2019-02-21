@@ -163,7 +163,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation a::before {
-  content:"";
+  content: "";
 
   position: absolute;
   left: 0;
@@ -253,7 +253,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide h3 {
-  width: 560px;
+  width: 520px;
   margin: 0;
   margin-bottom: 25px;
 
@@ -307,7 +307,7 @@ input[type="radio"].visually-hidden {
 #slide-1:checked ~ .slider-controls .slider-controls-item-1::before,
 #slide-2:checked ~ .slider-controls .slider-controls-item-2::before,
 #slide-3:checked ~ .slider-controls .slider-controls-item-3::before {
-  content:"";
+  content: "";
 
   position: absolute;
   left: 50%;
@@ -318,7 +318,7 @@ input[type="radio"].visually-hidden {
   height: 4px;
   margin: -4px;
 
-  background-color:inherit;
+  background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
@@ -358,13 +358,14 @@ input[type="radio"].visually-hidden {
 }
 
 .order-list-item p {
+  width: 260px;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
 }
 
 .order-list-item h3::before {
-  content:"";
+  content: "";
 
   display: block;
   width: 300px;
@@ -422,7 +423,7 @@ input[type="radio"].visually-hidden {
 /* Раздел О нас */
 
 .about-features-wrapper {
-  padding-bottom: 45px;
+  padding-bottom: 47px;
 
   border-bottom: 2px solid #eee;
 }
@@ -458,7 +459,7 @@ input[type="radio"].visually-hidden {
 .order-type {
   position: relative;
 
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding-left: 37px;
 }
 
@@ -546,7 +547,7 @@ td.number-description {
 }
 
 .partner::after {
-  content:"";
+  content: "";
 
   position: absolute;
   right: -21px;
@@ -757,6 +758,8 @@ td.number-description {
   padding-left: 36px;
 
   line-height: 20px;
+
+  cursor: pointer;
 }
 
 .filter-option:last-child label {
@@ -769,7 +772,7 @@ td.number-description {
 
 .filter-input-checkbox + label::before,
 .filter-input-radio + label::before {
-  content:"";
+  content: "";
 
   position: absolute;
   left: 0;
@@ -779,6 +782,7 @@ td.number-description {
 
   background-repeat: no-repeat;
   opacity: 0.4;
+
 }
 
 .filter-input-checkbox + label::before {
@@ -868,7 +872,7 @@ td.number-description {
 }
 
 .item-pic::before {
-  content:"";
+  content: "";
 
   position: absolute;
   top: -40px;
@@ -902,6 +906,8 @@ td.number-description {
   margin-bottom: 32px;
   padding: 0;
   padding-top: 40px;
+
+  cursor: pointer;
 }
 
 .template-item:last-child,
@@ -914,7 +920,8 @@ td.number-description {
   bottom: 0;
 
   display: none;
-  padding: 27px 60px 45px;
+  width: 240px;
+  padding: 27px 60px 43px;
 
   background-color: #eeeeee;
   text-align: center;
@@ -944,12 +951,22 @@ td.number-description {
   color: #666666;
 }
 
+.sedona-info p,
+.barber-info p,
+.mishka-info p {
+  padding: 0 22px 0;
+}
+
 .price-button {
   width: 200px;
 }
 
 .template-item:hover .item-pic::before {
   opacity: 1;
+}
+
+.template-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 }
 
 .template-item:hover .template-info {
@@ -962,8 +979,8 @@ td.number-description {
 
 .pagination-item a {
   display: block;
-  margin-right: 12px;
-  padding: 17px 20px 15px;
+  margin-right: 11px;
+  padding: 18px 20px 14px;
 
   line-height: 18px;
   font-weight: 500;
@@ -975,8 +992,9 @@ td.number-description {
   border-radius: 2px;
 }
 
-.pagination-item-current a {
-  padding: 14px 17px 12px;
+.pagination-item-current {
+  margin-right: 11px;
+  padding: 12px 18px 9px;
 
   background-color: #fff;
   border: 3px solid #eeeeee;

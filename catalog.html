@@ -74,7 +74,7 @@
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage" disabled>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage">
                   <label for="filter-advantage">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
@@ -128,7 +128,7 @@
                 <div class="item-pic">
                   <img src="img/img-sedona.jpg" alt="Шаблон Sedona - Информационный сайт для туристов" width="360" height="576">
                 </div>
-                <div class="template-info">
+                <div class="template-info sedona-info">
                   <h3><a href="sedona.html">Sedona</a></h3>
                   <p>Информационный сайт для туристов</p>
                   <button class="button price-button" type="button">9 900 руб.</button>
@@ -138,8 +138,8 @@
                 <div class="item-pic">
                   <img src="img/img-pink.jpg" alt="Шаблон Pink - Продуктовый лендинг приложения для iOS и Android" width="360" height="576">
                 </div>
-                <div class="template-info">
-                  <h3><a href="pink.html">Pink</a></h3>
+                <div class="template-info pink-info">
+                  <h3><a href="pink.html">Pink-app</a></h3>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <button class="button price-button" type="button">9 900 руб.</button>
                 </div>
@@ -148,7 +148,7 @@
                 <div class="item-pic">
                   <img src="img/img-barbershop.jpg" alt="Шаблон Barbershop - Сайт салона красоты" width="360" height="576">
                 </div>
-                <div class="template-info">
+                <div class="template-info barber-info">
                   <h3><a href="barbershop.html">Barbershop</a></h3>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
                   <button class="button price-button" type="button">9 900 руб.</button>
@@ -158,7 +158,7 @@
                 <div class="item-pic">
                   <img src="img/img-mishka.jpg" alt="Шаблон Mishka - Интернет-магазин вязаных игрушек" width="360" height="576">
                 </div>
-                <div class="template-info">
+                <div class="template-info mishka-info">
                   <h3><a href="mishka.html">Mishka</a></h3>
                   <p>Интернет-магазин вязаных игрушек</p>
                   <button class="button price-button" type="button">9 900 руб.</button>
@@ -168,7 +168,7 @@
                 <div class="item-pic">
                   <img src="img/img-aplus.jpg" alt="Шаблон A-plus - Лендинг курсов повышения квалификации" width="360" height="576">
                 </div>
-                <div class="template-info">
+                <div class="template-info aplus-info">
                   <h3><a href="a-plus.html">A-plus</a></h3>
                   <p>Лендинг курсов повышения квалификации</p>
                   <button class="button price-button" type="button">9 900 руб.</button>
@@ -178,7 +178,7 @@
                 <div class="item-pic">
                   <img src="img/img-kvast.jpg" alt="Шаблон Кваст" width="360" height="576">
                 </div>
-                <div class="template-info">
+                <div class="template-info kvast-info">
                   <h3><a href="kvast.html">Кваст</a></h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
                   <button class="button price-button" type="button">9 900 руб.</button>
@@ -187,7 +187,7 @@
             </ul>
             <ul class="pagination-list no-marker">
               <li class="pagination-item pagination-item-current">
-                <a href="">1</a>
+                1
               </li>
               <li class="pagination-item">
                 <a  href="#">2</a>
@@ -265,14 +265,12 @@
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us-info">
-          <label>Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия" required>
-          </label>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p class="write-us-info">
-          <label>Ваш e-mail:
-            <input type="email" name="email" placeholder="email@example.com" required>
-          </label>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" required>
         </p>
         <p class="write-us-info">
           <label for="text-field">Текст письма:</label>
