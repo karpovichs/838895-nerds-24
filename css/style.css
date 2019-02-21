@@ -264,7 +264,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide p {
-  width: 460px;
+  width: 420px;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -1141,16 +1141,17 @@ td.number-description {
 
 .modal {
   position: fixed;
-  top: 5%;
+  top: 50%;
   left: 50%;
   z-index: 1000;
+
+  transform: translate(-50%, -50%);
 
   display: none;
 }
 
 .modal-write-us {
   width: 760px;
-  margin-left: -480px;
   margin-bottom: 100px;
   padding: 67px 100px 84px;
 
