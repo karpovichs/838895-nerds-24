@@ -1206,8 +1206,7 @@ td.number-description {
   resize: none;
 }
 
-.write-us-info input[type="text"],
-.write-us-info input[type="email"],
+.write-us-info input,
 .write-us-info textarea {
   margin-bottom: 35px;
 
@@ -1220,16 +1219,15 @@ td.number-description {
   border-radius: 5px;
 }
 
-.write-us-info input[type="text"]:hover,
-.write-us-info input[type="email"]:hover,
+.write-us-info input:hover,
 .write-us-info textarea:hover {
-  color: #b1b1b1;
+  color: #444444;
 
+  opacity: 0.5;
   border-color: #b4b9bb;
 }
 
-.write-us-info input[type="text"]:focus,
-.write-us-info input[type="email"]:focus,
+.write-us-info input:focus,
 .write-us-info textarea:focus {
   color: #000000;
 
@@ -1237,12 +1235,8 @@ td.number-description {
   border-color: #000000;
 }
 
-/* .write-us-info input[type="text"]:required:invalid,
-.write-us-info input[type="text"]:required:invalid::placeholder,
-.write-us-info input[type="email"]:required:invalid,
-.write-us-info input[type="email"]:required:invalid::placeholder,
-.write-us-info textarea:required:invalid,
-.write-us-info textarea:required:invalid::placeholder {
+/* .write-us-info input:invalid,
+.write-us-info textarea:invalid {
   color: #e74246;
 
   border-color: #e74246;
@@ -1273,4 +1267,50 @@ td.number-description {
 
 .modal-close:active {
   opacity: 0.1;
+}
+
+@keyframes modal-move {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    transform: translate(-50%, -45%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-47%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-53%, -50%);
+  }
+}
+
+.modal-show {
+  display: block;
+
+  animation: modal-move 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
