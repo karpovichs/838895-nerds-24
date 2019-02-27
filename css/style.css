@@ -354,15 +354,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .order-list-item {
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 80px;
 }
 
-.order-list-item:last-child {
+.order-list-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -552,6 +554,8 @@ td.number-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -592,27 +596,31 @@ td.number-description {
   background-color: #eeeeee;
 }
 
-.partner:first-child::after {
+.htmlacademy-partner::after {
   top: 4px;
 }
 
-.partner:nth-child(2)::after {
+.barbershop-partner::after {
   top: 19px;
 }
 
-.partner:last-child::after {
+.mishka-partner::after {
+  top: 20px;
+}
+
+.partner:nth-child(4n)::after {
   display: none;
 }
 
-.partner:first-child {
+.htmlacademy-partner {
   margin-top: 15px;
 }
 
-.partner:nth-child(2) {
+.barbershop-partner {
   margin-top: 3px;
 }
 
-.partner:last-child {
+.mishka-partner {
   margin-top: 4px;
 }
 
@@ -645,7 +653,6 @@ td.number-description {
 
 .right-column {
   width: 760px;
-  margin-bottom: 61px;
 }
 
 .show-button {
@@ -1025,17 +1032,26 @@ td.number-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 41px;
 }
 
-.pagination-item a {
+.pagination-item a,
+.pagination-item-current {
   display: block;
-  margin-right: 11px;
-  padding: 18px 20px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin: 0 11px 20px 0;
+  padding: 18px 0 14px;
 
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #000000;
 
   background-color: #eeeeee;
@@ -1043,8 +1059,7 @@ td.number-description {
 }
 
 .pagination-item-current {
-  margin-right: 11px;
-  padding: 12px 18px 9px;
+  padding-top: 15px;
 
   background-color: #fff;
   border: 3px solid #eeeeee;
@@ -1052,15 +1067,10 @@ td.number-description {
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-  padding: 17px 20px 15px;
-
   background-color: #dfdfdf;
-  border: none;
 }
 
 .pagination-item a:active {
-  padding: 17px 20px 15px;
-
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d5d5d5;
@@ -1072,10 +1082,6 @@ td.number-description {
 .pagination-item:last-child a {
   width: 260px;
   margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-
-  text-align: center;
 }
 
 /* Футер */
