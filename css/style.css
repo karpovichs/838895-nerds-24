@@ -59,7 +59,6 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
-  vertical-align: center;
   margin: 0;
   padding: 17px 0 15px;
 
@@ -1136,6 +1135,7 @@ td.number-description {
   margin: 0;
   margin-bottom: 18px;
   padding: 0;
+  width: 210px;
 
   line-height: 18px;
   color: #666666;
